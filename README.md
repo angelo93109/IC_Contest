@@ -17,4 +17,4 @@ Allows engineers to concentrate on design.
 
 ### Graduate level:
 - [x] 2019 Image Convolution Circuit Design
-	![Report](https://img.shields.io/badge/Rank-S-blue.svg)![Report](https://img.shields.io/badge/area-XXXX-red.svg) 
+	![Report](https://img.shields.io/badge/Rank-S-blue.svg) ![Report](https://img.shields.io/badge/area-XXXX-red.svg) 
