@@ -14,3 +14,7 @@ The documents are fully described in Mandarin. Folks who speak other languages f
 The Cell-based design quiz is a great practice for people who want to train their design skills. 
 It has detailed documents (spec) and fine-written testbenches and test environments. 
 Allows engineers to concentrate on design. 
+
+### Graduate level:
+- [x] 2019 Image Convolution Circuit Design
+	![Report](https://img.shields.io/badge/Rank-S-blue.svg)![Report](https://img.shields.io/badge/area-XXXX-red.svg) 
