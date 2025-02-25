@@ -1,0 +1,115 @@
+TOOL:	xrun(64)	20.09-s007: Started on Feb 25, 2025 at 21:57:22 CST
+xrun(64): 20.09-s007: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: LASER.v
+	module worklib.LASER:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testfixture
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LASER:v <0x2524ecac>
+			streams:  19, words: 22968
+		worklib.testfixture:sv <0x19916dcb>
+			streams:  35, words: 56977
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Generating Debug Data:
+		LWD Database path: (/disk2/others/dsd_310591036/ic_contest/2023_grad_cell/xcelium.d/worklib/testfixture/sv/debug_db/testfixture)
+		Power Aware Instances:                    0
+		Liberty Instances:                        0
+		Out Of Module References:                 0
+		Assertions:                               0
+		Liberty Information:
+			PG Pins:	                  0
+			Liberty Pins:	                  0
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               78      78
+		Scalar wires:             3       -
+		Vectored wires:           8       -
+		Always blocks:            6       6
+		Initial blocks:          12      12
+		Cont. assignments:        2       2
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_xcelium171.so
+xcelium> source /usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/xcelium/files/xmsimrc
+xcelium> ida_probe -log
+
+[INDAGO]: Multi-Core recording is enabled
+
+xcelium> ida_probe -wave -wave_probe_args="[scope -tops] -all -depth all -memories"
+database -open ida.db/ida.shm 
+Created SHM database ida.db/ida.shm
+
+database -setdefault ida.db/ida.shm
+ida.db/ida.shm is set as default SHM database
+
+probe testfixture -all -depth all -memories -emptyok
+xmsim: *W,PRLDYN: The design contains dynamic objects. The "-all" option excludes dynamic objects to improve performance. To enable probing of dynamic objects the "-all -dynamic" options should be added to the probe command.
+Created probe 1
+
+xcelium> run
+FSDB Dumper for Xcelium, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+***********************************************************************
+*  WARNING -                                                          *
+*  The simulator version is newer than the FSDB Writer version which  *
+*  may cause abnormal behavior, please contact Cadence support for    *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LASER.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*******************************
+** Simulation Start          **
+*******************************
+== PATTERN img1.pattern
+---- Used Cycle:       4741
+---- Get Return: C1(11,12),C2( 4,10)
+---- cover =  30, optimum =  30
+== PATTERN img2.pattern
+---- Used Cycle:       4131
+---- Get Return: C1( 5,11),C2(11, 6)
+---- cover =  28, optimum =  28
+== PATTERN img3.pattern
+---- Used Cycle:       4741
+---- Get Return: C1( 5,10),C2(10, 5)
+---- cover =  29, optimum =  29
+== PATTERN img4.pattern
+---- Used Cycle:       3521
+---- Get Return: C1( 4, 9),C2(10, 5)
+---- cover =  30, optimum =  30
+== PATTERN img5.pattern
+---- Used Cycle:       5961
+---- Get Return: C1( 8,12),C2( 2,10)
+---- cover =  23, optimum =  23
+== PATTERN img6.pattern
+---- Used Cycle:       2301
+---- Get Return: C1( 8, 9),C2(12, 3)
+---- cover =  30, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =      25651  **
+**   Cover total = 170/170   **
+*******************************
+Simulation complete via $finish(1) at time 205204 NS + 0
+./tb.sv:254                  $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s007: Exiting on Feb 25, 2025 at 21:57:25 CST  (total: 00:00:03)
