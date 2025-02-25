@@ -19,4 +19,4 @@ Allows engineers to concentrate on design.
 - [x] 2019 Image Convolution Circuit Design
 	![Report](https://img.shields.io/badge/Rank-S-gold.svg) ![Report](https://img.shields.io/badge/area-23147-red.svg)
 - [x] 2020 String Matching Engine
-	![Report](https://img.shields.io/badge/Rank-B-gold.svg) ![Report](https://img.shields.io/badge/area-101343-red.svg) ![Report](https://img.shields.io/badge/cycle-3815-orange.svg) 
+	![Report](https://img.shields.io/badge/Rank-A-gold.svg) ![Report](https://img.shields.io/badge/area-101343-red.svg) ![Report](https://img.shields.io/badge/cycle-3815-orange.svg) 
