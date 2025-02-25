@@ -4,4 +4,4 @@
   **   RUN CYCLE =      25651  **  
   **   Cover total = 170/170   **  
   *******************************  
-3. Gate Level Simulation: Debugging
+2. Gate Level Simulation: Debugging
