@@ -17,4 +17,6 @@ Allows engineers to concentrate on design.
 
 ### Graduate level:
 - [x] 2019 Image Convolution Circuit Design
+	![Report](https://img.shields.io/badge/Rank-S-gold.svg) ![Report](https://img.shields.io/badge/area-23147-red.svg)
+- [x] 2020 String Matching Engine  
 	![Report](https://img.shields.io/badge/Rank-S-gold.svg) ![Report](https://img.shields.io/badge/area-23147-red.svg) 
